@@ -1,8 +1,6 @@
 # Responsive Images: Project Part 1 #
 https://classroom.udacity.com/courses/ud882/lessons/3520939843/concepts/37681789440923#
 
-** solution code: _ready!set!responsiveimages!_ **
-
 ## Your Goals: ##
 
 * Make the images fit in their containers in the viewport.
@@ -17,9 +15,9 @@ A code will appear in the Udacity Feedback. Paste the code in to the Udacity cla
 
 ## Current Problems with the Page ##
 
-* ~~The text is readable, but the images overflow the viewport.~~
-* ~~Page weight is massive: the images have been saved as JPEGs at low quality, but they're still too big.~~
-* ~~The headings, body text and images are not styled, making the post hard to read and dull to look at.~~
+* The text is readable, but the images overflow the viewport.
+* Page weight is massive: the images have been saved as JPEGs at low quality, but they're still too big.
+* The headings, body text and images are not styled, making the post hard to read and dull to look at.
 
 ## General Advice ##
 
