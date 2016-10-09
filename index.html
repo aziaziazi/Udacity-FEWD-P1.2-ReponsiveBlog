@@ -4,7 +4,7 @@
 
   <meta name="description" content="Udacity Responsive Images course project" />
   <meta name="author" content="//samdutton.com">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content"width=devic-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta itemprop="name" content="Udacity Responsive Images course project">
   <meta name="mobile-web-app-capable" content="yes">
   <meta id="theme-color" name="theme-color" content="#307699">
@@ -123,7 +123,13 @@
 
   <script src="node_modules/imager.js/Imager.js"></script>
   <script>
-   new Imager({ availableWidths: [300,550,800] });
-  </script>
+    new Imager({
+        availableWidths: {
+            300: '300_small_x1',
+            600: '600_small_x2',
+            800: '800_large_x1',
+            1600: '1800_large_x2'
+        }
+    });  </script>
 </body>
 </html>
