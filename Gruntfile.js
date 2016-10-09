@@ -14,14 +14,19 @@ module.exports = function(grunt) {
         options: {
           engine: 'im',
           sizes: [{
-            /*
-            Change these:
-            
-            width: ,
-            suffix: ,
-            quality:
-            */
-          }]
+            width: 800,
+            suffix:'',
+            quality:70
+          },{
+            width: 550,
+            suffix:'',
+            quality:70
+          },{
+            width: 300,
+            suffix:'',
+            quality:70
+          }
+          ]
         },
 
         /*
@@ -64,11 +69,12 @@ module.exports = function(grunt) {
       },
     },
   });
-  
+
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
+
   grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
 
 };
