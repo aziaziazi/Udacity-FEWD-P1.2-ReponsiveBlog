@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <meta charset="UTF-8">
   <meta name="description" content="Udacity Responsive Images course project" />
   <meta name="author" content="//samdutton.com">
   <meta name="viewport" content"width=devic-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
@@ -11,8 +11,8 @@
 
   <!-- loads the Udacity Feedback extension -->
   <meta name="udacity-grader"
-        content="http://udacity.github.io/responsive-images/project/project-grader.json"
-        unit-tests="http://udacity.github.io/responsive-images/project/project-grader.js">
+  content="http://udacity.github.io/responsive-images/project/project-grader.json"
+  unit-tests="http://udacity.github.io/responsive-images/project/project-grader.js">
 
   <base target="_blank">
 
@@ -24,26 +24,37 @@
 </head>
 
 <body>
+  <div class="container-background">
 
-  <h1>My responsive blog</h1>
+  <header>
+    <div class="container-content">
+      <h1>My responsive blog</h1>
+    </div>
+  </header>
+
+    <div class="logo-container">
+      <div class="container-content">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.2 400.2"><path d="M204.4 3.5C93.3 1.3 5.3 89.8 3.5 196.3c-2 111.4 87.9 200.5 196.4 200.4 107.8 0.3 194.7-86.2 196.9-192.3C398.9 93.4 310.6 5.6 204.4 3.5zM182.5 298.6c-4 2.6-8.5 2.8-11.5 2.7 -24.5-0.4-36-10.9-40.9-35.7 -2.8-14.3-3.1-28.7-3.1-43.2 0-22.5-0.7-45 2.1-67.3 1.2-9.6 3.7-18.9 7.8-27.7 7.9-17 24.7-22.8 40.2-22.6 5.7 0.1 8.4 3.1 8.2 7.9 -0.2 5-2.9 7.3-8.7 7.4 -2.2 0-4.4 0.3-6.5 0 -8.7-1.2-13.3 3.6-16.4 10.8 -5.5 12.9-7 26.7-7.6 40.5 -0.9 18.6-0.8 37.3-1.5 55.9 -0.4 11.2-0.7 22.3 1.4 33.3 1 5.4 2.9 10.6 5.9 15.3 5.6 8.8 15.7 12 25 8.2 3.7-1.5 7 0 9 3.2C188 290.2 186 296.2 182.5 298.6zM273.9 221.1c-3.3 15.5-2.2 31.1-1.2 46.7 1.1 16.3-10.3 29.4-27.2 31.3 -24.1 2.7-36.9-8.4-43.3-33.6 -3.5-13.9-4.1-28.3-4.1-42.7 0-19.7-0.6-39.3 1-58.9 1.1-13.6 4.1-26.8 10.3-38.8 6.6-12.9 17.5-19.7 32.5-18.9 1.3 0.1 2.7 0.3 3.9 0.6 5.5 1.3 7.7 3.8 7.2 7.9 -0.5 3.9-4.2 6.6-9.2 6.7 -12.7 0.1-15.9 2.3-19.7 14.9 -5.5 18.1-7.5 36.8-8.2 55.7 -0.2 6.2 0 12.3 0 18.5 -0.5 17.9-0.1 35.6 5.3 52.9 2.1 6.6 4.8 12.8 10.5 17.2 9.2 7 17.3 4.7 21.1-6.2 2-5.7 2.9-11.7 3.2-17.6 0.6-9 0.4-18 1-26.9 0.3-4.5-1.8-5.5-5.5-5.5 -3 0-6 0.1-9 0 -4.1-0.2-7.7-1.3-8.2-6.2 -0.5-4.2 2.7-8.3 7.3-8.6 8.8-0.6 17.7-0.6 26.3 2.1C273.3 213.1 275.1 215.6 273.9 221.1z" fill="#F6981D"/></svg>
+      </div>
+    </div>
 
   <article>
-
+    <div class="container-content">
     <figure>
       <img  class="delayed-image-load"
-            data-src="images/still_life-{width}.jpg"
-            data-alt="still_life">
+      data-src="images/still_life-{width}.jpg"
+      data-alt="still_life">
       <figcaption>still_life</figcaption>
     </figure>
 
     <h2>My story</h2>
 
-    <p>I love cheese, especially manchego swiss. <img class="smiley" src="images/images_src/fixed/smiley_face.png"> Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.</p>
+    <p>I love cheese, especially manchego swiss. 🙂 Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.</p>
 
     <figure>
       <img  class="delayed-image-load"
-            data-src="images/horses-{width}.jpg"
-            data-alt="horses">
+      data-src="images/horses-{width}.jpg"
+      data-alt="horses">
       <figcaption>horses</figcaption>
     </figure>
 
@@ -53,8 +64,8 @@
 
     <figure>
       <img  class="delayed-image-load"
-            data-src="images/volt-{width}.jpg"
-            data-alt="volt">
+      data-src="images/volt-{width}.jpg"
+      data-alt="volt">
       <figcaption>volt</figcaption>
     </figure>
 
@@ -62,8 +73,8 @@
 
     <figure>
       <img  class="delayed-image-load"
-            data-src="images/cockatoos-{width}.jpg"
-            data-alt="cockatoos">
+      data-src="images/cockatoos-{width}.jpg"
+      data-alt="cockatoos">
       <figcaption>cockatoos</figcaption>
     </figure>
 
@@ -77,8 +88,8 @@
 
     <figure>
       <img  class="delayed-image-load"
-            data-src="images/postcard-{width}.jpg"
-            data-alt="postcard">
+      data-src="images/postcard-{width}.jpg"
+      data-alt="postcard">
       <figcaption>postcard</figcaption>
     </figure>
 
@@ -86,8 +97,8 @@
 
     <figure>
       <img  class="delayed-image-load"
-            data-src="images/grasshopper-{width}.jpg"
-            data-alt="grasshopper">
+      data-src="images/grasshopper-{width}.jpg"
+      data-alt="grasshopper">
       <figcaption>grasshopper</figcaption>
     </figure>
 
@@ -95,8 +106,8 @@
 
     <figure>
       <img  class="delayed-image-load"
-            data-src="images/sfo-{width}.jpg"
-            data-alt="sfo">
+      data-src="images/sfo-{width}.jpg"
+      data-alt="sfo">
       <figcaption>sfo</figcaption>
     </figure>
 
@@ -104,32 +115,36 @@
 
     <figure>
       <img  class="delayed-image-load"
-            data-src="images/rosella-{width}.jpg"
-            data-alt="rosella">
+      data-src="images/rosella-{width}.jpg"
+      data-alt="rosella">
       <figcaption>rosella</figcaption>
     </figure>
 
     <p>Paneer st. agur blue cheese bocconcini. The big cheese chalk and cheese cheese and biscuits cream cheese cheese triangles mascarpone everyone loves rubber cheese. Stinking bishop manchego the big cheese lancashire hard cheese the big cheese danish fontina squirty cheese. Cheesy feet croque monsieur boursin squirty cheese cheddar boursin boursin pepper jack. Squirty cheese halloumi camembert de normandie macaroni cheese.</p>
 
+
   </article>
 
-  <img style="max-width: 100%" src="images/images_src/fixed/flourish.png">
-  <!--
-  Flourish credit: http://pixabay.com/en/flourish-line-border-decoration-31609/
-  -->
 
-  <br>
-  <a href="https://github.com/aziaziazi/Udacity-FEWD-P1.2-ReponsiveBlog/" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
 
+  <footer>
+    <div class="container-content">
+    <br>
+    <a href="https://github.com/aziaziazi/Udacity-FEWD-P1.2-ReponsiveBlog/" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+
+
+  </footer>
+
+</div class="container">
   <script src="node_modules/imager.js/Imager.js"></script>
   <script>
-    new Imager({
-        availableWidths: {
-            300: '300_small_x1',
-            600: '600_small_x2',
-            800: '800_large_x1',
-            1600: '1800_large_x2'
-        }
-    });  </script>
+  new Imager({
+    availableWidths: {
+      300: '300_small_x1',
+      600: '600_small_x2',
+      800: '800_large_x1',
+      1600: '1800_large_x2'
+    }
+  });  </script>
 </body>
 </html>
