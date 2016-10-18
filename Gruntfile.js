@@ -9,18 +9,40 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    cwebp: {
+      images: {
+        options: {
+          arguments: [ '-q', 40 ],
+          concurrency: 20
+        },
+        files: [
+          { src: [ 'images/*.jpg', 'images/*.png' ] }
+        ]
+      }
+    },
+
     responsive_images: {
       dev: {
         options: {
-          engine: 'im',
+          engine: 'gm',
+          concurrency:7,
+          upscale: true,
           sizes: [{
-            width: 800,
-            suffix:'_large_x1',
-            quality:60
+            width: 600,
+            suffix:'',
+            quality:50
           },{
-            width: 300,
-            suffix:'_small_x1',
-            quality:60
+            width: 800,
+            suffix:'',
+            quality:50
+          },{
+            width: 1200,
+            suffix:'',
+            quality:50
+          },{
+            width: 1600,
+            suffix:'',
+            quality:50
           }
           ]
         },
@@ -70,7 +92,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
+  grunt.loadNpmTasks('grunt-webp-compress');
 
-  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
+  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images', 'cwebp']);
 
 };
